@@ -25,10 +25,8 @@ html, body, #root {
   z-index: 0;
 }
 
-.text {
+.navbar {
   position: relative;
-  z-index: 1;
-  color: white;
-  font-size: 32px;
-  padding: 20px;
+  z-index: 2;
 }
+
