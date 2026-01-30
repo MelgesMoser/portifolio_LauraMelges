@@ -21,12 +21,19 @@ html, body, #root {
 .gradient {
   position: absolute;
   top: 0;
-  left: 0;      /* ← aqui */
-  z-index: 0;
+  left: 0;
+  z-index: 0;   /* fundo */
+  pointer-events: none;
 }
 
 .navbar {
   position: relative;
   z-index: 2;
 }
+
+.hero {
+  position: relative;
+  z-index: 1;   /* acima da imagem */
+}
+
 
