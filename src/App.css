@@ -1,39 +1,55 @@
-html, body, #root {
-  width: 100%;
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
-}
-
-* {
   box-sizing: border-box;
 }
 
-.app {
-  width: 100vw;
-  height: 100vh;
-  background-color: #0A0A14;
-  position: relative;
-  overflow: hidden;
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  background: #0A0A14;
+  overflow: auto;
 }
 
-/* imagem no fundo, colada na ESQUERDA */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
 .gradient {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;   /* fundo */
+  width: 100%;       
+  height: 100%;      
+  object-fit: contain; 
+  object-position: top center; 
+  z-index: 0;
   pointer-events: none;
 }
 
-.navbar {
+.navbar,
+.hero,
+.about {
   position: relative;
   z-index: 2;
 }
 
 .hero {
-  position: relative;
-  z-index: 1;   /* acima da imagem */
+  min-height: 100vh;
 }
 
 
+body::-webkit-scrollbar {
+  display: none; 
+}
+html {
+  scrollbar-width: none; 
+}
+body {
+  -ms-overflow-style: none;
+}

@@ -3,10 +3,8 @@ import './Hero.css'
 function Hero() {
   return (
     <section className="hero">
-      {/* gradiente de fundo */}
       <div className="hero-gradient"></div>
 
-      {/* conteúdo */}
       <div className="hero-content">
         <h1 className="hero-title">
           Hi, I'm <span>Laura</span>
