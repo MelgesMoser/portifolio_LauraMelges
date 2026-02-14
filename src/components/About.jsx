@@ -1,39 +1,59 @@
 import './About.css';
+import { useEffect } from 'react';
 
 function About() {
+
+  useEffect(() => {
+    const container = document.querySelector('.about-container');
+    if (!container) return;
+
+    container.querySelectorAll('.particle').forEach(p => p.remove());
+
+    const numParticles = 100; 
+    for (let i = 0; i < numParticles; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.top = Math.random() * 100 + '%';
+
+      const size = Math.random() * 4 + 1;
+      particle.style.width = size + 'px';
+      particle.style.height = size + 'px';
+
+      const duration = Math.random() * 6 + 4; 
+      particle.style.animationDuration = duration + 's';
+      particle.style.animationDelay = Math.random() * 5 + 's';
+
+      container.appendChild(particle);
+    }
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      container.querySelectorAll('.particle').forEach((p, index) => {
+        const speed = (index % 5 + 1) * 0.2; // velocidades diferentes
+        p.style.transform = `translateY(${scrollTop * speed}px)`;
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+
+  }, []);
+
   return (
     <section className="about">
       <div className="about-container">
-        <h2>
-          Sobre <span>mim</span>
-        </h2>
-
+        <h2>I'm a Fullstack Developer.</h2>
+        <h3>Experiência em desenvolvimento Web e Mobile.</h3>
         <p>
-          Sou desenvolvedora Fullstack com mais de 3 anos de experiência
-          criando aplicações web e mobile modernas, escaláveis e seguras.
+          Há mais de 3 anos na área de tecnologia.
         </p>
-
         <p>
-          Trabalho com foco em performance, arquitetura limpa e soluções
-          alinhadas aos objetivos estratégicos do negócio.
+          Desenvolvedora Fullstack focada em criar soluções seguras, escaláveis e 
         </p>
-
-        <div className="about-highlights">
-          <div>
-            <h3>+3</h3>
-            <span>Anos de Experiência</span>
-          </div>
-
-          <div>
-            <h3>Full</h3>
-            <span>Stack Developer</span>
-          </div>
-
-          <div>
-            <h3>Web</h3>
-            <span>& Mobile</span>
-          </div>
-        </div>
+        <p>
+          alinhadas aos objetivos do negócio.
+        </p>
       </div>
     </section>
   );
