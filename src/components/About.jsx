@@ -31,7 +31,7 @@ function About() {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       container.querySelectorAll('.particle').forEach((p, index) => {
-        const speed = (index % 5 + 1) * 0.2; // velocidades diferentes
+        const speed = (index % 5 + 1) * 0.2; 
         p.style.transform = `translateY(${scrollTop * speed}px)`;
       });
     };
