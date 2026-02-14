@@ -42,7 +42,7 @@ function About() {
   }, []);
 
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about-container">
         <h2>I'm a Fullstack Developer.</h2>
         <h3>Experiência em desenvolvimento Web e Mobile.</h3>
@@ -57,7 +57,6 @@ function About() {
         </p>
       </div>
 
-      <SideLines />
     </section>
   );
 }

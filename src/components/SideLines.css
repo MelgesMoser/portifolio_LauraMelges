@@ -1,9 +1,9 @@
 .side-line {
   position: absolute;       
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   width: 4px;
-  height: 850px;           
+  height: 900px;           
   border-radius: 2px;
   background: linear-gradient(
     to bottom,

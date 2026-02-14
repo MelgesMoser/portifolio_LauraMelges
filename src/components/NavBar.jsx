@@ -1,8 +1,29 @@
-import { useState } from 'react'
-import './NavBar.css'
+import { useState } from 'react';
+import './NavBar.css';
 
 function NavBar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const container = section.querySelector('.about-container') || section;
+
+      const containerTop = container.getBoundingClientRect().top + window.scrollY;
+      const containerHeight = container.offsetHeight;
+      const viewportHeight = window.innerHeight;
+
+      let scrollPosition = containerTop - (viewportHeight / 2) + (containerHeight / 2);
+
+      scrollPosition = Math.max(0, Math.min(scrollPosition, document.body.scrollHeight - viewportHeight));
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth',
+      });
+    }
+    setOpen(false); 
+  };
 
   return (
     <nav className="navbar">
@@ -11,11 +32,11 @@ function NavBar() {
       </div>
 
       <ul className={`navbar-center ${open ? 'open' : ''}`}>
-        <li>Home</li>
-        <li>Sobre Mim</li>
-        <li>Skils</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <li onClick={() => scrollToSection('home')}>Home</li>
+        <li onClick={() => scrollToSection('about')}>Sobre Mim</li>
+        <li onClick={() => scrollToSection('skills')}>Skils</li>
+        <li onClick={() => scrollToSection('projects')}>Projetos</li>
+        <li onClick={() => scrollToSection('contact')}>Contato</li>
       </ul>
 
       <div className="navbar-right">
@@ -29,7 +50,7 @@ function NavBar() {
         ☰
       </div>
     </nav>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
