@@ -25,7 +25,6 @@ function NavBar() {
         <span>🐦</span>
       </div>
 
-      {/* botão mobile */}
       <div className="menu-toggle" onClick={() => setOpen(!open)}>
         ☰
       </div>

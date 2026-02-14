@@ -10,14 +10,12 @@
   z-index: 2;
 }
 
-/* nome */
 .navbar-left {
   font-family: 'Audiowide', cursive;
   font-size: 28px;
   color: white;
 }
 
-/* menu desktop */
 .navbar-center {
   list-style: none;
   display: flex;
@@ -34,7 +32,6 @@
   opacity: 0.7;
 }
 
-/* ícones */
 .navbar-right {
   display: flex;
   gap: 20px;
@@ -42,7 +39,6 @@
   font-size: 20px;
 }
 
-/* botão mobile escondido no desktop */
 .menu-toggle {
   display: none;
   color: white;
@@ -50,9 +46,6 @@
   cursor: pointer;
 }
 
-/* ========================= */
-/* 📱 MOBILE */
-/* ========================= */
 @media (max-width: 900px) {
   .navbar {
     padding: 0 20px;
