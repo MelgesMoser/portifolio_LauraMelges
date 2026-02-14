@@ -60,13 +60,12 @@
 
 .about p {
   font-size: 18px;
-  line-height: 1;     /* menor espaçamento entre linhas */
+  line-height: 1;     
   color: #ccc;
-  margin-bottom: 8px;   /* reduz o espaço entre os parágrafos */
+  margin-bottom: 8px;   
   font-family: 'Poppins', sans-serif;
 }
 
-/* se quiser o último parágrafo sem margem extra */
 .about p:last-child {
   margin-bottom: 0;
 }
