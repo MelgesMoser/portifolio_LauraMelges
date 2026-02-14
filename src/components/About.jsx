@@ -1,5 +1,6 @@
 import './About.css';
 import { useEffect } from 'react';
+import SideLines from "./SideLines";
 
 function About() {
 
@@ -55,6 +56,8 @@ function About() {
           alinhadas aos objetivos do negócio.
         </p>
       </div>
+
+      <SideLines />
     </section>
   );
 }
