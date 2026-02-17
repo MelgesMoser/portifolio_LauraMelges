@@ -17,7 +17,6 @@
   flex-wrap: wrap;
 }
 
-/* CARD */
 .skill-card {
   width: 300px;
   min-height: 360px;
@@ -36,12 +35,10 @@
   transition: all 0.4s ease;
 }
 
-/* CARD DO MEIO MAIS ALTO */
 .skill-card:nth-child(2) {
   transform: translateY(-30px);
 }
 
-/* Neon Border */
 .skill-card::before {
   content: "";
   position: absolute;
@@ -64,13 +61,11 @@
   pointer-events: none;
 }
 
-/* HOVER EXPANSÃO */
 .skill-card:hover {
   width: 380px;
   box-shadow: 0 0 25px rgba(255, 0, 120, 0.5);
 }
 
-/* IMAGEM TOPO */
 .card-image {
   display: flex;
   justify-content: center;
@@ -82,7 +77,6 @@
   height: 60px;
 }
 
-/* TÍTULO */
 .skill-card h3 {
   font-family: 'Audiowide', cursive;
   font-size: 22px;
@@ -90,21 +84,18 @@
   margin-bottom: 10px;
 }
 
-/* ÁREA */
 .area-label {
   font-size: 14px;
   color: #ff0078;
   margin-bottom: 10px;
 }
 
-/* DESCRIÇÃO */
 .area-description {
   font-size: 14px;
   color: #ccc;
   margin-bottom: 20px;
 }
 
-/* LINGUAGENS */
 .languages {
   display: flex;
   justify-content: center;
@@ -120,7 +111,6 @@
   height: 40px;
 }
 
-/* MOSTRAR NO HOVER */
 .skill-card:hover .languages {
   opacity: 1;
   transform: translateX(0);

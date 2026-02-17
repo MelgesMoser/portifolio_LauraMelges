@@ -1,24 +1,20 @@
 import "./SkillsCards.css";
 
-// Images
 import frontendImg from "../assets/frontend.png";
 import backendImg from "../assets/backend.png";
 import infrastructureImg from "../assets/infra.png";
 
-// Frontend Icons
 import reactIcon from "../icons/react.png";
 import jsIcon from "../icons/js.png";
 import angularIcon from "../icons/angular.png";
 import typescriptIcon from "../icons/typescript.png";
 
-// Backend Icons
 import goIcon from "../icons/go.png";
 import javaIcon from "../icons/java.png";
 import pythonIcon from "../icons/python.png";
 import kotlinIcon from "../icons/kotlin.png";
 import mongodbIcon from "../icons/mongodb.png";
 
-// Infra Icons
 import gitIcon from "../icons/git.png";
 import dockerIcon from "../icons/docker.png";
 import figmaIcon from "../icons/figma.png";
