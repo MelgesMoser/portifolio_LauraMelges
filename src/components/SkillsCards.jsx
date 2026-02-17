@@ -5,7 +5,6 @@ function SkillsCards() {
     <section id="skills" className="skills">
       <div className="skills-container">
 
-        {/* FRONT */}
         <div className="skill-card">
           <div className="card-image">
             <img src="/images/frontend.png" alt="Front-End" />
@@ -23,12 +22,11 @@ function SkillsCards() {
           <div className="languages">
             <img src="/icons/react.png" alt="React" />
             <img src="/icons/js.png" alt="JavaScript" />
-            <img src="/icons/html.png" alt="HTML" />
-            <img src="/icons/css.png" alt="CSS" />
+            <img src="/icons/angular.png" alt="Angular" />
+            <img src="/icons/typescript.png" alt="TypeScript" />
           </div>
         </div>
 
-        {/* BACK */}
         <div className="skill-card">
           <div className="card-image">
             <img src="/images/backend.png" alt="Back-End" />
@@ -44,13 +42,14 @@ function SkillsCards() {
           </p>
 
           <div className="languages">
-            <img src="/icons/node.png" alt="Node.js" />
+            <img src="/icons/go.png" alt="Go" />
             <img src="/icons/java.png" alt="Java" />
             <img src="/icons/python.png" alt="Python" />
+            <img src="/icons/kotlin.png" alt="Kotlin" />
+            <img src="/icons/mongodb.png" alt="MongoDB" />
           </div>
         </div>
 
-        {/* EXTRA */}
         <div className="skill-card">
           <div className="card-image">
             <img src="/images/infrastructure.png" alt="Infrastructure" />
@@ -69,6 +68,8 @@ function SkillsCards() {
             <img src="/icons/git.png" alt="Git" />
             <img src="/icons/docker.png" alt="Docker" />
             <img src="/icons/figma.png" alt="Figma" />
+            <img src="/icons/postman.png" alt="Postman" />
+            <img src="/icons/spring.png" alt="Spring Boot" />
           </div>
         </div>
 
