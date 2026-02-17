@@ -34,7 +34,7 @@ function NavBar() {
       <ul className={`navbar-center ${open ? 'open' : ''}`}>
         <li onClick={() => scrollToSection('home')}>Home</li>
         <li onClick={() => scrollToSection('about')}>Sobre Mim</li>
-        <li onClick={() => scrollToSection('skills')}>Skils</li>
+        <li onClick={() => scrollToSection('skills')}>Skills</li>
         <li onClick={() => scrollToSection('projects')}>Projetos</li>
         <li onClick={() => scrollToSection('contact')}>Contato</li>
       </ul>

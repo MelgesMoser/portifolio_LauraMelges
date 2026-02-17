@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import "./Highlights.css";
 
-function Counter({ target }) {
+function Counter({ target, suffix = "" }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     let start = 0;
-    const duration = 1500; // tempo total da animação (1.5s)
+    const duration = 1500;
     const increment = target / (duration / 16);
 
     const timer = setInterval(() => {
@@ -23,27 +23,31 @@ function Counter({ target }) {
     return () => clearInterval(timer);
   }, [target]);
 
-  return <h2>{count.toString().padStart(2, "0")}</h2>;
+  return <h2>{count.toString().padStart(2, "0")}{suffix}</h2>;
 }
 
 function Highlights() {
   return (
-    <div className="highlights">
-      <div className="highlight-item">
-        <Counter target={15} suffix="+"/>
-        <p>Projects</p>
-      </div>
+    <section className="highlights">
+      <div className="highlights-container">
 
-      <div className="highlight-item">
-        <Counter target={3} suffix="+"/>
-        <p>Years</p>
-      </div>
+        <div className="highlight-item">
+          <Counter target={15} suffix="+" />
+          <p>Projects</p>
+        </div>
 
-      <div className="highlight-item">
-        <Counter target={25} suffix="+"/>
-        <p>Technologies</p>
+        <div className="highlight-item">
+          <Counter target={3} suffix="+" />
+          <p>Years</p>
+        </div>
+
+        <div className="highlight-item">
+          <Counter target={25} suffix="+" />
+          <p>Technologies</p>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 
