@@ -4,6 +4,8 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import SideLines from "./components/SideLines";
+import Highlights from "./components/Highlights";
+import SkillsCards from "./components/SkillsCards";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Hero />
       <About />
       <SideLines />
+      <Highlights />
+      <SkillsCards />
     </div>
     
   );
