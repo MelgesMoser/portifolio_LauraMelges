@@ -46,6 +46,23 @@
   cursor: pointer;
 }
 
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+}
+
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.1); 
+}
+
 @media (max-width: 900px) {
   .navbar {
     padding: 0 20px;
