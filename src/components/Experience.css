@@ -1,0 +1,138 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+  background: rgba(17, 17, 17, 0); 
+  backdrop-filter: blur(20px);        
+  -webkit-backdrop-filter: blur(20px); 
+  
+  box-shadow: 0 10px 40px rgba(255, 0, 120, 0.5);
+}
+
+.timeline-item.left {
+  margin-left: 0;             
+  justify-content: flex-end;  
+  border-radius: 0 20px 20px 0; 
+}
+
+.timeline-item.right {
+  margin-left: auto;         
+  justify-content: flex-start;
+  border-radius: 20px 0 0 20px; 
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  width: 100%;
+}
+
+.timeline-item.left .timeline-content {
+  text-align: right; 
+}
+
+.timeline-item.right .timeline-content {
+  text-align: left; 
+}
+
+.timeline-content h2 {
+  font-family: 'Audiowide', cursive;
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.timeline-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #FF0078;
+}
+
+.timeline-content span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.timeline-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .timeline-item {
+    width: 45%; /* reduz para aumentar a distância entre esquerda e direita */
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 40%; /* ainda menor, aumenta gap */
+    padding: 30px;
+  }
+
+  .timeline-content {
+    max-width: 280px;
+  }
+
+  .timeline-content h2 {
+    font-size: 28px;
+  }
+
+  .timeline-content h3 {
+    font-size: 16px;
+  }
+
+  .timeline-content span,
+  .timeline-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    width: 35%; /* itens mais estreitos para dar espaço entre eles */
+    padding: 20px;
+  }
+
+  .timeline-content {
+    max-width: 220px;
+  }
+
+  .timeline-content h2 {
+    font-size: 24px;
+  }
+
+  .timeline-content h3 {
+    font-size: 14px;
+  }
+
+  .timeline-content span,
+  .timeline-content p {
+    font-size: 12px;
+  }
+}

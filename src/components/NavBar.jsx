@@ -35,7 +35,7 @@ function NavBar() {
         <li onClick={() => scrollToSection('home')}>Home</li>
         <li onClick={() => scrollToSection('about')}>Sobre Mim</li>
         <li onClick={() => scrollToSection('skills')}>Skills</li>
-        <li onClick={() => scrollToSection('experiences')}>Experiências</li>
+        <li onClick={() => scrollToSection('experience')}>Experiências</li>
         <li onClick={() => scrollToSection('contact')}>Contato</li>
       </ul>
 

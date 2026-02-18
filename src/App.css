@@ -36,7 +36,8 @@ html, body {
 .about,
 .highlights,
 .skills-cards,
-.certifications {
+.certifications,
+.experience {
   position: relative;
   z-index: 2;
 }
