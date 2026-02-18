@@ -8,6 +8,7 @@ import Highlights from "./components/Highlights";
 import SkillsCards from "./components/SkillsCards";
 import Certifications from "./components/Certifications";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SkillsCards />
       <Certifications />
       <Experience />
+      <Contact />
     </div>
     
   );
