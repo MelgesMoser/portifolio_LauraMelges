@@ -6,6 +6,8 @@ import About from "./components/About";
 import SideLines from "./components/SideLines";
 import Highlights from "./components/Highlights";
 import SkillsCards from "./components/SkillsCards";
+import Certifications from "./components/Certifications";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <SideLines />
       <Highlights />
       <SkillsCards />
+      <Certifications />
+      <Experience />
     </div>
     
   );

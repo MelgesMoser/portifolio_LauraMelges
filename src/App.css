@@ -34,7 +34,10 @@ html, body {
 .navbar,
 .hero,
 .about,
-.highlights {
+.highlights,
+.skills-cards,
+.certifications,
+.experience {
   position: relative;
   z-index: 2;
 }
