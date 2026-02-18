@@ -31,6 +31,12 @@ html, body {
   pointer-events: none;
 }
 
+
+.contact {
+  position: relative;
+  z-index: 1; 
+}
+
 .navbar,
 .hero,
 .about,
