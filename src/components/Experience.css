@@ -81,17 +81,16 @@
   line-height: 1.6;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   .timeline-item {
-    width: 45%; /* reduz para aumentar a distância entre esquerda e direita */
+    width: 45%; 
     padding: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .timeline-item {
-    width: 40%; /* ainda menor, aumenta gap */
+    width: 40%; 
     padding: 30px;
   }
 
@@ -115,7 +114,7 @@
 
 @media (max-width: 480px) {
   .timeline-item {
-    width: 35%; /* itens mais estreitos para dar espaço entre eles */
+    width: 35%; 
     padding: 20px;
   }
 
