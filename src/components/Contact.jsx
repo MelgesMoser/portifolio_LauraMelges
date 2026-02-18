@@ -21,36 +21,21 @@ const Contact = () => {
         <div className="contact-column links-column">
           <div className="contact-links">
             <a
-              href="https://www.linkedin.com/in/seu-linkedin"
+              href="https://www.linkedin.com/in/laura-melges-moser/"
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
             </a>
             <a
-              href="https://github.com/seu-github"
+              href="https://github.com/MelgesMoser"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </a>
-            <a
-              href="https://www.instagram.com/seu-instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
+        
           </div>
-        </div>
-
-        <div
-          className="scroll-top"
-          onClick={() =>
-            window.scrollTo({ top: 0, behavior: "smooth" })
-          }
-        >
-          ↑
         </div>
       </div>
     </div>

@@ -31,7 +31,6 @@ html, body {
   pointer-events: none;
 }
 
-
 .contact {
   position: relative;
   z-index: 1; 
@@ -43,7 +42,8 @@ html, body {
 .highlights,
 .skills-cards,
 .certifications,
-.experience {
+.experience,
+.button {
   position: relative;
   z-index: 2;
 }
@@ -51,7 +51,6 @@ html, body {
 .hero {
   min-height: 100vh;
 }
-
 
 body::-webkit-scrollbar {
   display: none; 

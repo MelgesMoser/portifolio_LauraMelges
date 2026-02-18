@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './NavBar.css';
+import GitHubIcon from "../icons/git.png";
+import LinkedInIcon from "../icons/linkedin.png";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
@@ -40,11 +42,23 @@ function NavBar() {
       </ul>
 
       <div className="navbar-right">
-        <span>🐙</span>
-        <span>💬</span>
-        <span>📷</span>
-        <span>🐦</span>
-      </div>
+      
+      <a 
+        href="https://github.com/MelgesMoser" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img src={GitHubIcon} alt="GitHub" className="navbar-icon" />
+      </a>
+
+      <a 
+        href="https://www.linkedin.com/in/laura-melges-moser/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img src={LinkedInIcon} alt="LinkedIn" className="navbar-icon" />
+      </a>
+    </div>
 
       <div className="menu-toggle" onClick={() => setOpen(!open)}>
         ☰

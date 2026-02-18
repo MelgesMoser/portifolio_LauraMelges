@@ -1,18 +1,21 @@
 .contact {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
-  background-image: url('../assets/Gradient2.png'); 
+
+  background-image: url('../assets/Gradient2.png');
   background-repeat: no-repeat;
-  background-position: bottom left; 
-  background-size: 100% auto;
-  margin-top: -400px; /* mantém o efeito da imagem */
+  background-position: center bottom;
+
+  background-size: 100% 100vh;
+
+  margin-top: -400px;
 }
 
 .contact-card {
   position: absolute; 
-  bottom: -60px; /* desce 50px abaixo do final da .contact */
+  bottom: -60px; 
   left: 0;
   width: 100%;
   height: 300px;
@@ -25,7 +28,6 @@
   z-index: 10;
 }
 
-/* Cada coluna */
 .contact-column {
   display: flex;
   flex-direction: column;
@@ -33,7 +35,6 @@
   margin-right: 50px;
 }
 
-/* Coluna 1: Nome */
 .name-column h1 {
   font-family: 'Audiowide', cursive;
   font-size: 28px;
@@ -41,25 +42,23 @@
   margin: 0;
 }
 
-/* Coluna 2 e 3: contatos e links */
-/* Coluna 2 e 3: contatos e links */
+
 .info-column,
 .links-column {
   font-family: 'Poppins', sans-serif;
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 12px; /* espaçamento maior entre os itens */
+  gap: 12px; 
 }
 
-/* Itens de contato */
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 12px; /* espaço entre ícone e texto */
+  gap: 12px; 
   padding: 6px 10px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05); /* leve fundo para destacar */
+  background: rgba(255, 255, 255, 0.05); 
   transition: all 0.3s ease;
   font-size: 15px;
   line-height: 1.4;
@@ -68,10 +67,9 @@
 
 .contact-item:hover {
   background: rgba(255, 255, 255, 0.15);
-  transform: translateX(5px); /* movimento sutil ao passar o mouse */
+  transform: translateX(5px); 
 }
 
-/* Links dentro dos itens */
 .contact-item a {
   color: #ff69b4;
   text-decoration: none;
@@ -83,7 +81,6 @@
   color: #ff85c1;
 }
 
-/* Lista de links (ex: redes sociais) */
 .contact-links {
   display: flex;
   flex-direction: column;
@@ -106,7 +103,7 @@
 }
 
 .contact-links a:hover {
-  background: rgba(255, 105, 180, 0.15); /* fundo rosa suave */
+  background: rgba(255, 105, 180, 0.15); 
   transform: translateX(5px);
   color: #ff69b4;
 }

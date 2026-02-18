@@ -4,6 +4,7 @@
   padding: 10px 3%;
   position: relative;
   z-index: 2;
+  margin-top: -80px;;
 }
 
 .highlights-container {
